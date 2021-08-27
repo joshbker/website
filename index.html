@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Devous</title>
+    <meta name="keywords" content="devous">
+    <meta name="author" content="Devous">
+    <meta name="theme-color" content="#924BF3">
+
+    <meta property="og:title" content="Devous">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="best ww">
+    <meta property="og:url" content="https://devous.dev">
+    <meta property="og:image" content="https://devous.dev/asset/img/banner.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Devous_">
+    <meta name="twitter:title" content="Devous">
+    <meta name="twitter:description" content="best ww">
+
+    <link href='https://fonts.googleapis.com/css?family=Cousine' rel='stylesheet' type='text/css'>
+    <link type="text/css" href="style.css" rel="stylesheet"/>
+
+    <script>
+        function copy() {
+            const element = document.createElement('textarea');
+            element.value = "Devous#0001";
+            document.body.appendChild(element);
+            element.select();
+            document.execCommand('copy');
+            document.body.removeChild(element);
+
+            const discord = document.getElementById("discord");
+            discord.innerText = "copied";
+            setTimeout(() => discord.innerText = "discord", 1000);
+        }
+
+        async function music() {
+            setTimeout(() => {
+                document.getElementById(`music`).play();
+                document.getElementById(`music`).volume = .05;
+            }, 1000);
+
+        }
+
+        function toggle() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</head>
+
+<body onload="music();">
+<div>
+    <audio id="music" src="asset/audio/test.mp3" loop autoplay></audio>
+</div>
+<div id="wrapper">
+    <div id="title">
+        <h1>Devous</h1>
+    </div>
+
+    <div id="key">
+        <p>
+        -------------------------------------<br>
+        <br>
+        SG9uZXN0bHksIEkganVzdCB3YW50ZWQgYSBiaWcgYmxvY2sg<br>
+        b2YgdGV4dCBpbiB0aGUgbWlkZGxlIG9mIHRoZSBzY3JlZW4u<br>
+        IEkgdGhvdWdodCBpdCBsb29rZWQgcHJldHR5IGNvb2wsIGJ1<br>
+        dCB0aGF0J3MganVzdCBteSBvcGluaW9uLiBJZiB5b3UgZGVj<br>
+        b2RlZCB0aGlzIHRoZW4gSSBob3BlIHlvdSBoYWQgZnVuIHBy<br>
+        b2JhYmx5IHB1dHRpbmcgaXQgaW50byBzb21lIHdlYnNpdGUg<br>
+        dGhhdCBwb3BwZWQgdXAgb24gR29vZ2xlIHdoZW4geW91IHNl<br>
+        YXJjaGVkICJiYXNlNjQgZGVjb2RlciIuIEkgZG9uJ3Qga25v<br>
+        dyB3aGF0IGVsc2UgdG8gc2F5LCB0aGlzIGp1c3QgbmVlZHMg<br>
+        dG8gYmUgbG9uZ2VyIHNvIEknbSBhaW1sZXNzbHkgdHlwaW5n<br>
+        IG1vcmUuLi4gYnV0IHllYWgsIEkgdGhpbmsgdGhhdCdzIGFs<br>
+        bCwgaGF2ZSBhIG5pY2UgZGF5IDopIC0gRGV2b3VzLg==<br>
+        -------------------------------------<br>
+        </p>
+    </div>
+
+    <p></p>
+
+    <div id="links">
+        <a id="twitter" onclick="window.open('https://twitter.com/Devous_');">twitter</a>
+        <a id="github" onclick="window.open('https://github.com/Devous');">github</a>
+        <a id="discord" onclick="copy()">discord</a>
+    </div>
+
+    <p></p>
+
+    <div id="toggle">
+        <label class="switch">
+            <input type="checkbox" onclick="toggle(); music();">
+            <span class="slider round"></span>
+        </label>
+    </div>
+</div>
+</body>
+</html>
